@@ -1,3 +1,13 @@
+ _____ _   _ _   _  ___   _   _      ___________ _____ _____ 
+|_   _| \ | | | | |/ _ \ | \ | |    |_   _| ___ \  ___|  ___|
+  | | |  \| | | | / /_\ \|  \| |______| | | |_/ / |__ | |__  
+  | | | . ` | | | |  _  || . ` |______| | |    /|  __||  __| 
+ _| |_| |\  \ \_/ / | | || |\  |      | | | |\ \| |___| |___ 
+ \___/\_| \_/\___/\_| |_/\_| \_/      \_/ \_| \_\____/\____/ 
+
+Retail Invantry managemnet system
+
+
 Build an app that: 
 - add an object 
 - add the amount of objects there are
@@ -11,3 +21,37 @@ Build an app that:
 - increase quantity
 
 -show item's loacation in the stockroom
+
+--------------------------------------------------------------------
+
+What Is the System and What does it Do?
+-----------------------------------------
+	Problems to Fix:
+	----------------
+	- Stock info is not real time 
+	- Stock is not easy to find 
+	- Stock gets lost and is difficult to trace 
+	- It is impossible to tell if an item has been tampered with
+	- it is difficult to know 
+	
+Who is Going to Use it?
+------------------------
+How is it Going to be Used?
+----------------------------
+What is the User Going to See When They Log in?
+-----------------------------------------------
+	Graphical Info?
+	----------------
+	Reporting?
+	----------
+	Admin?
+	-------
+What I Think to App Should do?
+------------------------------
+
+How Does That Look to The User?
+-------------------------------
+How Does the User User Get to Places?
+-------------------------------------
+	Draw Diagrams?
+	--------------
