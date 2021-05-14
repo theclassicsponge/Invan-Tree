@@ -1,0 +1,13 @@
+Build an app that: 
+- add an object 
+- add the amount of objects there are
+
+- display objects and their quantity
+
+- remove objects 
+ 
+- lower quantity 
+
+- increase quantity
+
+-show item's loacation in the stockroom
