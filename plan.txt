@@ -9,18 +9,17 @@ Retail Invantry managemnet system
 
 
 Build an app that: 
-- add an object 
-- add the amount of objects there are
 
-- display objects and their quantity
-
-- remove objects 
- 
-- lower quantity 
-
-- increase quantity
-
--show item's loacation in the stockroom
+- Adds and displays a product
+- search for a product by name, stock number, barcode, size, colour, age-range, popularity  
+- Add and display the quantity of products available
+- Remove products from the inventry when products are sold
+- simulate products being sold (for the prototype)  
+- display thre item's loacation in the stockroom
+- flag damaged or missing stock
+- flag stock not returned to the correct stockroom location or sold
+- user and admin must need to log into app
+- user and admin changes must be logged
 
 --------------------------------------------------------------------
 
@@ -28,16 +27,35 @@ What Is the System and What does it Do?
 -----------------------------------------
 	Problems to Fix:
 	----------------
-	- Stock info is not real time 
-	- Stock is not easy to find 
-	- Stock gets lost and is difficult to trace 
-	- It is impossible to tell if an item has been tampered with
-	- it is difficult to know 
+		- Stock info is not real time 
+		- Stock is not easy to find 
+		- Stock gets lost and is difficult to trace 
+		- It is impossible to tell if an item has been tampered with
 	
 Who is Going to Use it?
 ------------------------
+	User:
+		- Stockroom staff
+		- Retail staff
+		- Retail Managers
+		- Stockroom Managers
+	Admin:
+		- 
 How is it Going to be Used?
 ----------------------------
+	User:
+
+		- To locate items in a stock room:
+		- To sell stock:
+		- To check the availibility of an item:
+		- To find missing stock:
+		- To flag missing stock:
+		- To flag damaged stock:
+	Admin:
+		- To add new items to inventry 
+		- To delete discontinued products
+		- 
+
 What is the User Going to See When They Log in?
 -----------------------------------------------
 	Graphical Info?
@@ -55,3 +73,33 @@ How Does the User User Get to Places?
 -------------------------------------
 	Draw Diagrams?
 	--------------
+Tech Stack:
+-----------
+	Front-end:
+		Web-App:
+			- React
+			- HTML/CSS/JS (prototype only)
+		Mobile App:
+			-React Native
+			
+	Back-end:
+		
+		Flask (Python) REST API
+	Database:
+		SQLite3 [Python] (Prototype)
+		Undecided for full version
+
+Item Specifics:
+---------------
+	- Product Name
+	- Product Price 
+	- Product Size (N/A if not aplicable)
+	- Product Colour
+	- Stock Number
+	- Stock Availability (And Number of Stock)
+	- Stock Room Location
+	- Shop Floor Location
+	- Product Description (Taken from website specifications)
+
+
+

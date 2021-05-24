@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='item.css') }}">
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+    <h1>ASICS GEL-CONTEND 6 GS</h1>
+    <img src="static/shoe.png">
+    <h3>Brand Name:</h3>
+    <p>ASICS</p>
+    <h3>Product Name:</h3>
+    <p>GEL-CONTEND 6 GS</p>
+    <h3>Stock Number:</h3>
+    <p>52544001</p>
+    <h3>Size:</h3>
+    <p>3</p>
+    <h3>Colour:</h3>
+    <p>Pink</p>
+    <h3>Stockroom Location:</h3>
+    <p>A3</p>
+    <h3>Shopfloor Location:</h3>
+    <p>B8</p>
+    <h3>Stock Quantity:</h3>
+    <p>0</p>
+    <h3>Stock Description:</h3>
+    <p>Coming Soon</p>
+    <h3>Price:</h3>
+    <p>£40.00</p>
+    </div>
+{% endblock %}

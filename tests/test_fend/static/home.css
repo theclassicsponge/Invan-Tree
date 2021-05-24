@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    font-family:arial,helvetica;
+  }
+.search .search-input {
+    padding: 0 10px;
+    width: 100%;
+    caret-color: #536bf6;
+    font-size: 19px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+    outline: 5px black;
+    border-width: 1.5px ;
+}
+
+.title {
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+<!--THIS IS INVANTREE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contact.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home Page{% endblock %}</title>
+</head>
+
+
+<div class="topnav">
+    <a href="/home" class="active">Home</a>
+    {% if session.logged_in %}
+    <a href="/logout">logout</a>
+    {% else %}
+    <a href="/login">login</a>
+    {% endif %}
+    <a href="/about">About</a>
+</div>
+
+
+
+    {% block content %}
+    {% endblock %} 
+    </div>
+</body>
+</html>
