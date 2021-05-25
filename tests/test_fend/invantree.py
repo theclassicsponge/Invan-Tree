@@ -30,6 +30,7 @@ def before_request():
 
 
 @app.route("/login", methods=['GET', 'POST'])
+@app.route("/",methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         session.pop('user_id', None)
