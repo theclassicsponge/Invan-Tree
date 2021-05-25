@@ -1,8 +1,19 @@
 <!--THIS IS INVANTREE-->
 <!doctype html>
-<link rel="stylesheet" href='static', filename='home.css'>
-
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+{% endblock %}
 {% block content %}
-<h1>THIS IS THE LOGIN PAGE</h1>
-<a href="/">Back</a>
+
+
+<div class="main">
+    <p class="sign" align="center">Sign in</p>
+    <form class="form1" method="POST">
+      <input class="un" type="text" align="center" name="un" placeholder="Username">
+      <input class="pass" type="password" align="center" name="pass" placeholder="Password">
+      <button class="submit" align="center">Sign in</button>
+      <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+            
+                
+    </div>
 {% endblock %}
