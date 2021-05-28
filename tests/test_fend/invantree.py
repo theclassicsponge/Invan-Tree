@@ -93,10 +93,21 @@ def about():
 
 @app.route("/item", methods=['GET', 'POST'])
 def item():
+
+    if not g.user:
+        return redirect(url_for('login'))
+    product = UserTwo.query.all()
+    return render_template("site/item.html", product=product)
+
+
+@app.route("/search", methods=['POST'])
+def search():
     if not g.user:
         return redirect(url_for('login'))
 
     return render_template("site/item.html")
+
+
 
 
 if __name__ == "__main__":
