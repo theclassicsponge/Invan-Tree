@@ -1,8 +1,30 @@
 from flask import Flask, render_template, request, session, redirect, url_for, g
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///items.db'
 app.secret_key = 'secretkey'
+db = SQLAlchemy(app)
 
+
+class UserTwo(db.Model):
+    stock_number = db.Column(db.Integer, unique=True, primary_key=True)
+    brand = db.Column(db.String(80), nullable=False)
+    product_name = db.Column(db.String(120), nullable=False)
+    size = db.Column(db.String(80), nullable=False)
+    colour = db.Column(db.String(80), nullable=False)
+    stockroom_location = db.Column(db.String(80), nullable=False)
+    shopfloor_loaction = db.Column(db.String(80), nullable=True)
+    stock_quantity = db.Column(db.Integer, unique=False, nullable=False)
+    stock_description = db.Column(db.Text, nullable=True)
+    price = db.Column(db.Numeric, nullable=False)
+    link = db.Column(db.String(400), nullable=True)
+    date_added = db.Column(db.DateTime, default=datetime.utcnow)
+
+
+def __repr__(self):
+    return '<name %r>' % self.id
 
 
 class User:
