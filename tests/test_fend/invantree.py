@@ -91,7 +91,7 @@ def about():
     return render_template("site/about.html")
 
 
-@app.route("/item")
+@app.route("/item", methods=['GET', 'POST'])
 def item():
     if not g.user:
         return redirect(url_for('login'))
