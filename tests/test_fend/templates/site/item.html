@@ -9,24 +9,24 @@
     <h1>ASICS GEL-CONTEND 6 GS</h1>
     <img src="static/shoeph.png">
     <h3>Brand Name:</h3>
-    <p>ASICS</p>
+    <p>{{ UserTwo.brand }}</p>
     <h3>Product Name:</h3>
-    <p>GEL-CONTEND 6 GS</p>
+    <p>{{ UserTwo.product_name }}</p>
     <h3>Stock Number:</h3>
-    <p>52544001</p>
+    <p>{{ UserTwo.stock_number }}</p>
     <h3>Size:</h3>
-    <p>3</p>
+    <p>{{ UserTwo.size }}</p>
     <h3>Colour:</h3>
-    <p>Pink</p>
+    <p>{{ UserTwo.colour }}</p>
     <h3>Stockroom Location:</h3>
-    <p>A3</p>
+    <p>{{ UserTwo.stockroom_location }}</p>
     <h3>Shopfloor Location:</h3>
-    <p>B8</p>
+    <p>{{ UserTwo.shopfloor_location }}</p>
     <h3>Stock Quantity:</h3>
-    <p>0</p>
+    <p>{{ UserTwo.price }}</p>
     <h3>Stock Description:</h3>
-    <p>Coming Soon</p>
+    <p>{{ UserTwo.stock_description }}</p>
     <h3>Price:</h3>
-    <p>£40.00</p>
+    <p>£ {{ UserTwo.price }}</p>
     </div>
 {% endblock %}

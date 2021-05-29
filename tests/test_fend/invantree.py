@@ -100,12 +100,16 @@ def item():
     return render_template("site/item.html", product=product)
 
 
-@app.route("/search", methods=['POST'])
+@app.route("/search", methods=['GET', 'POST'])
 def search():
+
     if not g.user:
         return redirect(url_for('login'))
-
-    return render_template("site/item.html")
+#    q =
+    if request.method == 'GET':
+        return redirect(url_for('home'))
+    else:
+        return render_template("site/item.html")
 
 
 
