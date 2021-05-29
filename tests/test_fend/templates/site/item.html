@@ -6,7 +6,7 @@
 {% block content %}
 
     <div class="container">
-{% for d in details %}
+    {% for d in details  %}
     <h1>{{ d.brand + " " + d.product_name }}</h1>
     <img src="static/shoeph.png">
     <h3>Brand Name:</h3>
@@ -29,6 +29,7 @@
     <p>{{ d.stock_description }}</p>
     <h3>Price:</h3>
     <p>£ {{ d.price }}</p>
+    {% endfor %}
     </div>
-{% endfor %}
+
 {% endblock %}
