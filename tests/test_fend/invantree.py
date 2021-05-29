@@ -96,7 +96,7 @@ def item():
 
     if not g.user:
         return redirect(url_for('login'))
-    product = UserTwo.query.all()
+    product = UserTwo.query.first()
     return render_template("site/item.html", product=product)
 
 
@@ -105,11 +105,12 @@ def search():
 
     if not g.user:
         return redirect(url_for('login'))
-#    q =
+    details = UserTwo.query.all()
+
     if request.method == 'GET':
         return redirect(url_for('home'))
     else:
-        return render_template("site/item.html")
+        return render_template("site/item.html", details=details)
 
 
 
