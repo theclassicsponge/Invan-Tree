@@ -7,7 +7,7 @@
 
     <div class="container">
 {% for d in details %}
-    <h1>ASICS GEL-CONTEND 6 GS</h1>
+    <h1>{{ d.brand + " " + d.product_name }}</h1>
     <img src="static/shoeph.png">
     <h3>Brand Name:</h3>
     <p>{{ d.brand }}</p>
@@ -24,7 +24,7 @@
     <h3>Shopfloor Location:</h3>
     <p>{{ d.shopfloor_location }}</p>
     <h3>Stock Quantity:</h3>
-    <p>{{ d.price }}</p>
+    <p>{{ d.stock_quantity }}</p>
     <h3>Stock Description:</h3>
     <p>{{ d.stock_description }}</p>
     <h3>Price:</h3>
