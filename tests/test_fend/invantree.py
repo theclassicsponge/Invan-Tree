@@ -23,6 +23,7 @@ class UserTwo(db.Model):
     date_added = db.Column(db.DateTime, default=datetime.utcnow)
 
 
+
 def __repr__(self):
     return '<name %r>' % self.id
 
@@ -91,13 +92,13 @@ def about():
     return render_template("site/about.html")
 
 
-@app.route("/item", methods=['GET', 'POST'])
-def item():
-
-    if not g.user:
-        return redirect(url_for('login'))
-    product = UserTwo.query.first()
-    return render_template("site/item.html", product=product)
+# @app.route("/item", methods=['GET', 'POST'])
+# def item():
+#
+#     if not g.user:
+#         return redirect(url_for('login'))
+#     product = UserTwo.query.first()
+#     return render_template("site/item.html", product=product)
 
 
 @app.route("/search", methods=['GET', 'POST'])
@@ -105,7 +106,7 @@ def search():
 
     if not g.user:
         return redirect(url_for('login'))
-    details = UserTwo.query.all()
+    details = UserTwo.query.get({"stock_number": 52540101})
 
     if request.method == 'GET':
         return redirect(url_for('home'))
