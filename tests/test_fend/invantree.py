@@ -106,14 +106,15 @@ def search():
 
     if not g.user:
         return redirect(url_for('login'))
-    details = UserTwo.query.get({"stock_number": 52540101})
+
+    search = request.form.get('r')
+
+    details = UserTwo.query.filter_by(stock_number=search)
 
     if request.method == 'GET':
         return redirect(url_for('home'))
     else:
         return render_template("site/item.html", details=details)
-
-
 
 
 if __name__ == "__main__":
